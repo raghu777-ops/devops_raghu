@@ -84,4 +84,18 @@
       </plugins>
     </pluginManagement>
   </build>
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-38-123.ap-south-1.compute.internal-releases</name>
+        <url>http://13.232.72.113:8081/artifactory/libs-release</url>
+    </repository>
+</distributionManagement>		
+  <distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-38-123.ap-south-1.compute.internal-snapshots</name>
+        <url>http://13.232.72.113:8081/artifactory/libs-snapshot</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
