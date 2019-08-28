@@ -1,13 +1,13 @@
 node {
 stage ('clean')
    {
-        sh "mvn clean"
+        cleanWs()
         
     }
     
 stage ('build')
 
 {
-  sh "mvn clean package"
+  echo 'done'
 }
 }
