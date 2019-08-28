@@ -1,3 +1,4 @@
+node {
 stage ('clean')
    {
         sh "mvn clean"
@@ -8,4 +9,5 @@ stage ('build')
 
 {
   sh "mvn package"
+}
 }
