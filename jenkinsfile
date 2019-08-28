@@ -1,4 +1,7 @@
-node {
+pipeline{
+
+agent any 
+
 stage ('clean')
    {
         cleanWs()
@@ -8,6 +11,14 @@ stage ('clean')
 stage ('build')
 
 {
-  echo 'done'
+  sh 'mvn clean package'
 }
+
+stage ('')
+steps{
+
+
+  
+}
+
 }
