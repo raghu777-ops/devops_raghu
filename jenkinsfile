@@ -1,23 +1,25 @@
 pipeline{
 agent any 
 stages {
-stage ('clean')
+stage ('clean'){
      steps {
         cleanWs()
         
          } 
+         }
          
-  stage ('clone')
+  stage ('clone'){
 steps
      {
        git credentialsId: '4bec768b-04e7-4def-b19e-fcd6da35b0fe', url: 'https://github.com/raghu777-ops/devops_raghu.git'
      } 
+     }
      
-stage ('build')
+stage ('build'){
    steps {
        sh 'mvn clean package'
     }
-    
+    }
     }
 
 }
